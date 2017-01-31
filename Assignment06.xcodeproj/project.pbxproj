@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F749F311E40915700165D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F301E40915700165D12 /* AppDelegate.swift */; };
-		3F749F331E40915700165D12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F321E40915700165D12 /* ViewController.swift */; };
+		3F749F331E40915700165D12 /* WiggleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F321E40915700165D12 /* WiggleViewController.swift */; };
 		3F749F361E40915700165D12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F749F341E40915700165D12 /* Main.storyboard */; };
 		3F749F381E40915700165D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F749F371E40915700165D12 /* Assets.xcassets */; };
 		3F749F3B1E40915700165D12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F749F391E40915700165D12 /* LaunchScreen.storyboard */; };
 		3F749F461E40915700165D12 /* Assignment06Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F451E40915700165D12 /* Assignment06Tests.swift */; };
 		3F749F511E40915700165D12 /* Assignment06UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F501E40915700165D12 /* Assignment06UITests.swift */; };
+		3F749F5F1E40A04F00165D12 /* RainboSchwan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F749F5E1E40A04F00165D12 /* RainboSchwan.jpg */; };
+		3F749F611E40A0C200165D12 /* ResizeHeadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F749F601E40A0C200165D12 /* ResizeHeadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		3F749F2D1E40915700165D12 /* Assignment06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment06.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F749F301E40915700165D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F749F321E40915700165D12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F749F321E40915700165D12 /* WiggleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiggleViewController.swift; sourceTree = "<group>"; };
 		3F749F351E40915700165D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F749F371E40915700165D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F749F3A1E40915700165D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		3F749F4C1E40915700165D12 /* Assignment06UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment06UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F749F501E40915700165D12 /* Assignment06UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment06UITests.swift; sourceTree = "<group>"; };
 		3F749F521E40915700165D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F749F5E1E40A04F00165D12 /* RainboSchwan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RainboSchwan.jpg; sourceTree = "<group>"; };
+		3F749F601E40A0C200165D12 /* ResizeHeadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeHeadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				3F749F301E40915700165D12 /* AppDelegate.swift */,
-				3F749F321E40915700165D12 /* ViewController.swift */,
+				3F749F321E40915700165D12 /* WiggleViewController.swift */,
 				3F749F341E40915700165D12 /* Main.storyboard */,
+				3F749F601E40A0C200165D12 /* ResizeHeadViewController.swift */,
+				3F749F5E1E40A04F00165D12 /* RainboSchwan.jpg */,
 				3F749F371E40915700165D12 /* Assets.xcassets */,
 				3F749F391E40915700165D12 /* LaunchScreen.storyboard */,
 				3F749F3C1E40915700165D12 /* Info.plist */,
@@ -234,6 +240,7 @@
 			files = (
 				3F749F3B1E40915700165D12 /* LaunchScreen.storyboard in Resources */,
 				3F749F381E40915700165D12 /* Assets.xcassets in Resources */,
+				3F749F5F1E40A04F00165D12 /* RainboSchwan.jpg in Resources */,
 				3F749F361E40915700165D12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F749F331E40915700165D12 /* ViewController.swift in Sources */,
+				3F749F331E40915700165D12 /* WiggleViewController.swift in Sources */,
 				3F749F311E40915700165D12 /* AppDelegate.swift in Sources */,
+				3F749F611E40A0C200165D12 /* ResizeHeadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
