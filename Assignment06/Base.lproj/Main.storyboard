@@ -163,41 +163,47 @@
         <scene sceneID="Mch-1R-wnI">
             <objects>
                 <tableViewController id="0Ly-kw-2GN" customClass="ResizeHeadViewController" customModule="Assignment06" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o5H-a2-vGl">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="o5H-a2-vGl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="3EC-U9-kzG">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="288"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RainboSchwan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p5K-1w-HSm">
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="375" id="05I-Hl-2DX"/>
-                                        <constraint firstAttribute="height" constant="288" id="ZTd-eD-9RF"/>
-                                    </constraints>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="RainboSchwan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p5K-1w-HSm">
+                                    <frame key="frameInset" width="375" height="280"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="p5K-1w-HSm" firstAttribute="centerY" secondItem="3EC-U9-kzG" secondAttribute="centerY" id="K9N-iW-H7t"/>
-                                <constraint firstItem="p5K-1w-HSm" firstAttribute="centerX" secondItem="3EC-U9-kzG" secondAttribute="centerX" id="LuX-ew-q3v"/>
+                                <constraint firstItem="p5K-1w-HSm" firstAttribute="centerY" secondItem="3EC-U9-kzG" secondAttribute="centerY" id="Acd-9E-e3H"/>
+                                <constraint firstItem="p5K-1w-HSm" firstAttribute="centerX" secondItem="3EC-U9-kzG" secondAttribute="centerX" id="rPa-tw-75G"/>
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="F9J-fH-VkL">
-                                <rect key="frame" x="0.0" y="316" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyCell" selectionStyle="default" indentationWidth="10" textLabel="ygp-fH-JHM" style="IBUITableViewCellStyleDefault" id="F9J-fH-VkL">
+                                <rect key="frame" x="0.0" y="308" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F9J-fH-VkL" id="iv8-Ho-a3g">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NewsItemCell" tableViewCell="F9J-fH-VkL" id="iv8-Ho-a3g">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ygp-fH-JHM">
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Resize Head" id="zXs-TN-LCa"/>
                     <connections>
-                        <outlet property="rainboheight" destination="ZTd-eD-9RF" id="usV-oM-WhU"/>
+                        <outlet property="tableView" destination="o5H-a2-vGl" id="Vyb-Pc-B6a"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQY-St-5s8" userLabel="First Responder" sceneMemberID="firstResponder"/>
